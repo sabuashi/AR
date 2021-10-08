@@ -128,31 +128,31 @@
                   
                   // Массив имён файлов .patt. Массив заполняется в порядке добавления маркеров
                   // если вместо .patt был добавлен баркод, на его место в массив добавляется пустая строка
-                  const patternNames = ["pattern-Screenshot_2.patt" ,"pattern-Screenshot_1 (2).patt" ,"pattern-Screenshot_3.patt" ,"pattern-Screenshot_4.patt" ,"pattern-Screenshot_5.patt"];
+                  const patternNames = ["pattern-Screenshot_2.patt" ,"pattern-Screenshot_1.patt" ,"pattern-Screenshot_6.patt" ,"pattern-Screenshot_7.patt"];
                   // Maссив баркодов, заполняется одновременно с массивом паттернов
                   // если вместо баркода был добавлен .patt, на его место в массив добавляется -1
-                  const patternBarcode = [-1 ,-1 ,-1 ,-1 ,-1];
+                  const patternBarcode = [-1 ,-1 ,-1 ,-1];
                   // Массив типов контента для каждого маркера, заполняется значиями: изображение, модель, видео
-                  const modes = ["image" ,"image" ,"image" ,"image" ,"image"];
+                  const modes = ["image" ,"image" ,"image" ,"image"];
                   // Массив файлов моделей, если нет модели будет добавлена пустая строка
-                  const modelFiles = ["" ,"" ,"" ,"" ,""];
+                  const modelFiles = ["" ,"" ,"" ,""];
                   // Массив файлов изображений, если нет изображения будет добавлена пустая строка
-                  const imageFiles = ["pattern-Screenshot_2.png" ,"pattern-Screenshot_1 (1).png" ,"pattern-Screenshot_3.png" ,"pattern-Screenshot_4.png" ,"pattern-Screenshot_5.png"];
+                  const imageFiles = ["pattern-Screenshot_2.png" ,"pattern-Screenshot_1.png" ,"pattern-Screenshot_6.png" ,"pattern-Screenshot_7.png"];
                   // Массив файлов видео, если нет видео будет добавлена пустая строка
-                  const videoFiles = ["" ,"" ,"" ,"" ,""];
+                  const videoFiles = ["" ,"" ,"" ,""];
                   // Массив файлов аудио, если нет аудио будет добавлена пустая строка
-                  const audioFiles = ["Vocaroo 30 Sep 2021 13_29_24 GMT+0300 1kRPHKbfrYEr.mp3" ,"Vocaroo 30 Sep 2021 13_30_34 GMT+0300 1epuHQCEMXYr.mp3" ,"Vocaroo 30 Sep 2021 13_32_03 GMT+0300 1c8jNYQGTS1W.mp3" ,"Vocaroo 30 Sep 2021 13_32_18 GMT+0300 1cqK23ZL81Aa.mp3" ,"Vocaroo 30 Sep 2021 13_33_17 GMT+0300 1exsxgnkKB2d.mp3"];
+                  const audioFiles = ["Vocaroo 08 Oct 2021 14_30_12 GMT+0300 18QbtvIq71i7.mp3" ,"Vocaroo 08 Oct 2021 14_31_58 GMT+0300 1nfGHGsjToIi.mp3" ,"Vocaroo 08 Oct 2021 14_32_42 GMT+0300 1gQXJWz02GHz.mp3" ,"Vocaroo 08 Oct 2021 14_33_19 GMT+0300 1gO5w4Elkf47.mp3"];
                   // Массив опций повтора аудио и видео контента, по дефолту для всех будет false
-                  const repeatOptions = ["false" ,"false" ,"false" ,"false" ,"false"];
+                  const repeatOptions = ["false" ,"false" ,"false" ,"false"];
   
                   // Создаём массив для всех маркеров
                   const markerRoots = [];
-                  for (let i = 0; i < 5; i++) {
+                  for (let i = 0; i < 4; i++) {
                         markerRoots[i] = new THREE.Group();
                   }
   
                   // Проходимся по каждому маркеру из массива и добавляем его в главный контейнер 
-                  for (let i = 0; i < 5; i++) {
+                  for (let i = 0; i < 4; i++) {
                     mainContainer.add(markerRoots[i]);
 
                     // Если текущий маркер это баркод, создаём AR контроллер под баркод
